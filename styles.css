@@ -1,0 +1,53 @@
+/*Reseta todo o documento, retirando suas bordas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav li {
+    display: inline-block
+}
+
+nav li a {
+    color: aliceblue;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+nav li a:hover {
+    color: darkgray;
+}
+
+/*Parte na qual fará os links sair da nav e desaparecerem ao usar display: none*/
+.dropdown-menu {
+    position: absolute;
+    box-shadow: 2px 2px 2px rgb(100, 152, 170);
+    display: none;
+}
+
+/*Fará com que o elemento principal aparecera após movimento do mouse*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*Cor ao sobrepor o mouse nos elementos*/
+.dropdown-menu a:hover  {
+    background-color: rgb(81, 119, 132);
+}
+
+/*Faz com que os objetos fiquem na vertical*/
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
